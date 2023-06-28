@@ -57,7 +57,7 @@
 
 .background {
   height: 944px;
-  background-image: url("../../../public/icons/border.svg"),url("../../../public/animations/giphy.webm");
+  background-image: url("/icons/border.svg"),url("/animations/giphy.webm");
   background-repeat: no-repeat;
   background-position: 839px 1px, 944px 3px;
   background-size: 1018.13px 1009px, 920.13px 914px;
@@ -66,7 +66,7 @@
 
 .background2{
   height: 944px;
-  background-image: url("../../../public/animations/Mask.gif");
+  background-image: url("/animations/Mask.gif");
   background-repeat: no-repeat;
   background-position: 0% 0%;
   background-size: contain;
