@@ -1,0 +1,5 @@
+export * as default from './AboutUs'
+export * as default from './Career'
+export * as default from './CareerCard'
+export * as default from './OurProjects'
+export * as default from './GameSlider'

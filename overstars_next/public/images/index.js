@@ -1,0 +1,5 @@
+export {default as GameSlide1} from './proj.png'
+export {default as GameSlide2} from './proj2.png'
+export {default as GameSlide3} from './proj3.png'
+export {default as GameSlide4} from './proj4.png'
+export {default as GameSlide5} from './proj5.png'
