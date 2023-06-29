@@ -5,6 +5,9 @@ import styles from './index.module.scss'
 const DetailedGamePage = () => {
   return (
     <div className={styles.game_container} id="about_us">
+      <video autoPlay muted loop className={styles.projectsBg}>
+        <source src="animations/ourProjectsBg.mp4" type="video/mp4" />
+      </video>
       <div className={styles.__container}>
         <div className={styles.game_body}>
           <div className={styles.game_content}>
