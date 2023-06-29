@@ -27,7 +27,10 @@ const OurProjects = () => {
           top: `${cursorPosition.y}px`,
         }}
       ></div>
-      <div className={styles.project__bloc}>
+      <div className={styles.project__block}>
+      <video autoPlay muted loop className={styles.blockBg}>
+        <source src="animations/ourProjectsBg.mp4" type="video/mp4" />
+      </video>
         <div className={styles.__container}>
           <div className={styles.title__projects}>Our projects</div>
           <GamesSlider />
