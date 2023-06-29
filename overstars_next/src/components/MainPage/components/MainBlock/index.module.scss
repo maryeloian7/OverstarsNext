@@ -1,0 +1,91 @@
+.root {
+  position: relative;
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/animations/Mask.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  position: relative;
+  height: 140px;
+  font-weight: 600;
+  font-size: 120px;
+  line-height: 140px;
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.earth {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  width: auto;
+  height: 85vh;
+  aspect-ratio: 1/1;
+  max-height: 95%;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+  overflow: hidden;
+  background-image: url("/animations/giphy.webm");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+@media (max-width: 1440px) {
+  .earth {
+    right: -100px;
+    height: 80vw;
+  }
+
+  .title {
+    font-size: 110px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1279px) {
+  .earth {
+    right: -100px;
+    height: 70vw;
+  }
+
+  .title {
+    font-size: 80px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .earth {
+    right: -100px;
+    height: 65vw;
+  }
+  .title {
+    font-size: 60px;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  .earth {
+    right: -100px;
+    height: 60vw;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+}
+@media (min-width: 350px) and (max-width: 499px) {
+  .earth {
+    right: -100px;
+    // width: 25vw;
+    // height: 25vw;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
