@@ -1,6 +1,6 @@
 .game_container {
   position: relative;
-  height: 900px;
+  height: 100vh;
 }
 
 .projectsBg {
@@ -54,10 +54,53 @@
 .game_shape_img {
   display: none;
 }
-@media (min-width: 1280px) and (max-width: 1440px) {
-  .game_container {
-    height: 704px;
+
+.previewBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.relative {
+  position: relative;
+  width: max-content;
+  align-self: center;
+  justify-self: center;
+}
+
+.backLink {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  @media (max-width: 991px) {
+    display: none;
   }
+  span {
+    letter-spacing: 3px;
+  }
+}
+
+.mobileBackLink {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  @media (max-width: 991px) {
+    display: flex;
+  }
+  @media (max-width: 479px) {
+    top: -58px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1440px) {
   .game_body {
     // padding-top: 190px;
   }
@@ -72,9 +115,6 @@
 }
 
 @media (min-width: 992px) and (max-width: 1279px) {
-  .game_container {
-    height: 600px;
-  }
   .game_title {
     font-size: 46px;
   }
@@ -94,10 +134,6 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .game_container {
-    height: 980px;
-    margin: 0 auto;
-  }
 
   .game_body {
     // padding-top: 160px;
@@ -127,16 +163,11 @@
   .game_shape_img {
     margin: 0 auto;
     display: block;
-    width: 350px;
     height: 290px;
     padding-top: 20px;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
-  .game_container {
-    height: 800px;
-    margin: 0 auto;
-  }
 
   .game_body {
     display: flex;
@@ -166,16 +197,11 @@
   .game_shape_img {
     margin: 0 auto;
     display: block;
-    width: 330px;
     height: 270px;
     padding-top: 20px;
   }
 }
 @media (min-width: 350px) and (max-width: 479px) {
-  .game_container {
-    height: 734px;
-    margin: 0 auto;
-  }
 
   .game_body {
     // padding-top: 30px;
@@ -338,7 +364,6 @@
   .game_shape_img {
     margin: 0 auto;
     display: block;
-    width: 350px;
     height: 290px;
     padding-top: 20px;
   }
@@ -378,7 +403,6 @@
   .game_shape_img {
     margin: 0 auto;
     display: block;
-    width: 330px;
     height: 270px;
     padding-top: 20px;
   }

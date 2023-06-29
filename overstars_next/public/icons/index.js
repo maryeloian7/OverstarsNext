@@ -1,5 +1,6 @@
 export {default as BorderIcon} from './border.svg'
 export {default as LogoIcon} from './Logologo.svg'
+export {default as CancelIcon} from './Cancel.svg'
 export {default as TelegramIcon} from './Telegram.svg'
 export {default as TwitterIcon} from './Twitter.svg'
 export {default as YoutubeIcon} from './Youtube.svg'

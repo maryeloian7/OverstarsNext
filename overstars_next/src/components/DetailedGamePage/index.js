@@ -1,6 +1,8 @@
-import {RectangleIcon} from "public/icons";
+import { RectangleIcon } from "public/icons";
 
-import styles from './index.module.scss'
+import styles from "./index.module.scss";
+import Link from "next/link";
+import { CancelIcon } from "../../../public/icons";
 
 const DetailedGamePage = () => {
   return (
@@ -12,8 +14,19 @@ const DetailedGamePage = () => {
         <div className={styles.game_body}>
           <div className={styles.game_content}>
             <h2 className={styles.game_title}>Game Name</h2>
-            <span>
-              <img src={RectangleIcon.src} alt="share" className={styles.game_shape_img} />
+            <span className={styles.relative}>
+            <Link href={"/"} className={styles.mobileBackLink}>
+              <img
+                src={CancelIcon.src}
+                alt="cancel"
+                className={styles.backIcon}
+              />
+            </Link>
+              <img
+                src={RectangleIcon.src}
+                alt="share"
+                className={styles.game_shape_img}
+              />
             </span>
             <div className={styles.game_text}>
               We are a rapidly growing mobile GayDev studio, driven by our
@@ -25,8 +38,22 @@ const DetailedGamePage = () => {
               engage with mobile games.
             </div>
           </div>
-          <div className={styles.shape}>
-            <img src={RectangleIcon.src} alt="share" className={styles.game_img} />
+          <div className={styles.previewBlock}>
+            <Link href={"/"} className={styles.backLink}>
+              <span>Go Back</span>
+              <img
+                src={CancelIcon.src}
+                alt="cancel"
+                className={styles.backIcon}
+              />
+            </Link>
+            <div className={styles.shape}>
+              <img
+                src={RectangleIcon.src}
+                alt="share"
+                className={styles.game_img}
+              />
+            </div>
           </div>
         </div>
       </div>
