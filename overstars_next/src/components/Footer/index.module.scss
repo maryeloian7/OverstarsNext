@@ -1,8 +1,8 @@
 .footer__container {
-  /* height: 394px; */
   display: flex;
   justify-content: center;
   background-color: black;
+  padding-bottom: 10px;
 }
 
 .footer {
@@ -17,42 +17,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  /* height: 300px; */
 }
 
 .footer__logo {
   padding-top: 56px;
   width: 192px;
 }
-
-/* .footer__text {
-  width: 509px;
-  font-size: 36px;
-  line-height: 43px;
-  text-align: center;
-  color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-} */
-
-/* .footer__input {
-  width: 239px;
-  height: 39px;
-  letter-spacing: 3px;
-  color: #ffffff;
-  background: black;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-  font-size: 16px;
-  line-height: 24px;
-} */
-
-/* .btn__footer {
-  width: 50px;
-  height: 46.08px;
-  background: #003e66;
-  border-radius: 8px 8px 0px 0px;
-} */
 
 .social__footer {
   display: flex;
@@ -69,7 +39,6 @@
   line-height: 24px;
   display: flex;
   align-items: center;
-
   color: #ffffff;
 }
 
@@ -95,25 +64,14 @@
 .footer__logo {
   padding-top: 39px;
 }
-/* .footer__text {
-  width: 478px;
-  font-size: 30px;
-} */
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .__container {
     width: 750px;
 }
-.footer__content {
-/* height: 265px; */
-}
 .footer__logo {
   padding-top: 30px;
 }
-/* .footer__text {
-  width: 478px;
-  font-size: 30px;
-} */
 .social__footer {
   flex-direction: column-reverse;
   padding-top: 22px;
@@ -126,16 +84,11 @@
   .__container {
     width: 470px;
 }
-.footer__content {
-  /* height: 204px; */
-}
+
   .footer__logo {
     padding-top: 5px;
   }
-  /* .footer__text {
-    width: 430px;
-    font-size: 26px;
-  } */
+
   .social__footer {
     flex-direction: column-reverse;
     padding-top: 22px;
@@ -143,24 +96,17 @@
   .social__text {
     padding-top: 15px;
   }
-  .footer__container {
-    /* height: 319px; */
-  }
+
 }
 @media (min-width: 350px) and (max-width: 479px) {
   .__container {
     width: 343px;
 }
-.footer__content {
-  /* height: 204px; */
-}
+
   .footer__logo {
     padding-top: 5px;
   }
-  /* .footer__text {
-    width: 330px;
-    font-size: 24px;
-  } */
+
   .social {
     width: 330px;
   }
@@ -172,9 +118,4 @@
     padding-top: 15px;
     font-size: 14px;
   }
-  .footer__container {
-    /* height: 319px; */
-  }
-}
-@media (max-width: 320px) {
 }
