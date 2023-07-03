@@ -5,7 +5,6 @@ import Loader from "../Loader";
 
 
 const Layout = ({ children }) => {
-
   return (
     <> 
       <Header />

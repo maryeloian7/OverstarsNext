@@ -5,7 +5,6 @@ const TITLE_TEXT = "OVERSTARS GAMES";
 
 
 const MainBlock = () => {
-
   return (
     <>
         <div>
