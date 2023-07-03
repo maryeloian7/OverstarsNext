@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
+
 import styles from "./index.module.scss";
+import clsx from "clsx";
 import GamesSlider from "../GameSlider";
 
 const OurProjects = () => {
@@ -14,7 +16,7 @@ const OurProjects = () => {
   return (
     <div
       ref={ref}
-      className={styles.projects}
+      className={clsx(styles.projects, styles.container)}
       id="games"
       onMouseMove={handlerMoveMouse}
     >

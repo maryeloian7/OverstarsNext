@@ -5,10 +5,11 @@ const TITLE_TEXT = "OVERSTARS GAMES";
 
 
 const MainBlock = () => {
+
   return (
     <>
         <div>
-          <div className={clsx(styles.root)}>
+          <div className={styles.root}>
             <video
               autoPlay
               muted
