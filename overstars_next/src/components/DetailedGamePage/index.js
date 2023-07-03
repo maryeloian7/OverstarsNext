@@ -15,7 +15,7 @@ const DetailedGamePage = () => {
           <div className={styles.game_content}>
             <h2 className={styles.game_title}>Game Name</h2>
             <span className={styles.relative}>
-            <Link href={"/"} className={styles.mobileBackLink}>
+            <Link href={"/#games"} className={styles.mobileBackLink}>
               <img
                 src={CancelIcon.src}
                 alt="cancel"
@@ -39,7 +39,7 @@ const DetailedGamePage = () => {
             </div>
           </div>
           <div className={styles.previewBlock}>
-            <Link href={"/"} className={styles.backLink}>
+            <Link href={"/#games"} className={styles.backLink}>
               <span>Go Back</span>
               <img
                 src={CancelIcon.src}

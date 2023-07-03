@@ -3,26 +3,27 @@ import AboutUs from "./components/AboutUs";
 import Career from "./components/Career";
 import MainBlock from "./components/MainBlock";
 import Loader from "../Loader";
+
 import { useState, useEffect } from "react";
 
 const MainPage = () => {
-  const [loading, setLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    setLoading(false);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 5000);
   }, []);
-
   return (
     <>
-      {loading ? (
+      <div style={{ display: isLoading ? "block" : "none" }}>
         <Loader />
-      ) : (
-        <div>
-          <MainBlock />
-          <OurProjects />
-          <AboutUs />
-          <Career />
-        </div>
-      )}
+      </div>
+      <div style={{ display: isLoading ? "none" : "block" }}>
+        <MainBlock />
+      </div>
+      <OurProjects />
+      <AboutUs />
+      <Career />
     </>
   );
 };
