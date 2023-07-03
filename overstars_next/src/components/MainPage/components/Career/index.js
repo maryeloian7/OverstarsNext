@@ -1,11 +1,11 @@
-import clsx from "clsx";
+
 import CareerCard from '../CareerCard';
 import styles from './index.module.scss'
 
 
-const Career = (props) => {
+const Career = () => {
   return (
-    <div className={clsx(styles.career__container, props.isLoading && styles.invisible)} id="career">
+    <div className={styles.career__container} id="career">
       <div className={styles.body__container}>
         <h2 className={styles.career_title}>Career</h2>
         <div className={styles.cards__container}>

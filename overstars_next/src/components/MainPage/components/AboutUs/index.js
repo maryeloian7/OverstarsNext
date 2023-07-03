@@ -1,9 +1,8 @@
 import styles from "./index.module.scss";
-import clsx from "clsx";
 
-const AboutUs = (props) => {
+const AboutUs = () => {
   return (
-    <div className={clsx(styles.about_container, props.isLoading && styles.invisible)} id="about_us">
+    <div className={styles.about_container} id="about_us">
       <div className={styles.__container}>
         <div className={styles.about_body}>
           <div className={styles.about_content}>

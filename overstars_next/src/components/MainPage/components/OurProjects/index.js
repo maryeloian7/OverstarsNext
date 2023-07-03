@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
-
 import styles from "./index.module.scss";
-import clsx from "clsx";
 import GamesSlider from "../GameSlider";
 
-const OurProjects = (props) => {
+const OurProjects = () => {
   const ref = useRef();
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
@@ -16,7 +14,7 @@ const OurProjects = (props) => {
   return (
     <div
       ref={ref}
-      className={clsx(styles.projects, styles.container, props.isLoading && styles.invisible)}
+      className={styles.projects}
       id="games"
       onMouseMove={handlerMoveMouse}
     >
