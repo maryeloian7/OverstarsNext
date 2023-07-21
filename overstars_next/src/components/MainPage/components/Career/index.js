@@ -14,7 +14,6 @@ const Career = () => {
             title="Junior Unity Developer"
             text1="Good understanding of game design and mechanics"
             text2="Bachelor's degree in BSUIR or BSU"
-            text3="Gay Orientation"
             text4="Passion for gaming and staying  updated with industry trends"
             text5="Good communication  and teamwork abilities"
           />
@@ -23,7 +22,6 @@ const Career = () => {
             title="Junior Game Designer"
             text1="Good understanding of game design and mechanics"
             text2="Bachelor's degree in BSUIR or BSU"
-            text3="Gay Orientation"
             text4="Passion for gaming and staying  updated with industry trends"
             text5="Good communication  and teamwork abilities"
           />
@@ -32,7 +30,6 @@ const Career = () => {
             title="Trainee Cleaner (Trofim)"
             text1="Good understanding of game design and mechanics"
             text2="Bachelor's degree in BSUIR or BSU"
-            text3="Gay Orientation"
             text4="Passion for gaming and staying  updated with industry trends"
             text5="Good communication  and teamwork abilities"
           />

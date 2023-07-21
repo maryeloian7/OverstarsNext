@@ -15,7 +15,6 @@ const CareerCard = (props) => {
           <ul className={styles.card_list}>
             <li className={styles.card_points}>{props.text1}</li>
             <li className={styles.card_points}>{props.text2}</li>
-            <li className={styles.card_points}>{props.text3}</li>
             <li className={styles.card_points}>{props.text4}</li>
             <li className={styles.card_points}>{props.text5}</li>
           </ul>
